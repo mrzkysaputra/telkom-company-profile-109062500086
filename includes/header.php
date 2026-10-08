@@ -23,10 +23,13 @@ $currentPage = basename($_SERVER['PHP_SELF']);
         <nav class="main-nav" aria-label="Navigasi utama">
             <a class="<?= $currentPage === 'index.php' ? 'active' : '' ?>" href="index.php">Beranda</a>
 HEAD
+HEAD
             <a class="<?= $currentPage === 'profile.php' ? 'active' : '' ?>" href="profile.php">Tentang Kampus</a>
 
             <a class="<?= $currentPage === 'profile.php' ? 'active' : '' ?>" href="profile.php">Tentang Kami</a>
 conflict-navbar
+            <a class="<?= $currentPage === 'profile.php' ? 'active' : '' ?>" href="profile.php">Profil</a>
+parent of a47b332 (style: ubah label profil pada main)
             <a class="<?= $currentPage === 'programs.php' ? 'active' : '' ?>" href="programs.php">Program Studi</a>
             <a class="<?= in_array($currentPage, ['news.php', 'news_detail.php']) ? 'active' : '' ?>" href="news.php">Berita</a>
             <a class="<?= $currentPage === 'contact.php' ? 'active' : '' ?>" href="contact.php">Kontak</a>
